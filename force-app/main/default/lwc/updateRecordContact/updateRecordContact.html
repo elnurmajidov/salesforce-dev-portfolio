@@ -1,0 +1,38 @@
+<template>
+     <lightning-card icon-name="standard:contact" variant="base" title="Update Contact with UpdateRecord">
+      <div class="slds-var-m-around_medium">
+        <form lwc:ref="contactForm" >
+            <template lwc:if={contactInfo}>
+            <lightning-input 
+              label="First Name"
+              name="FirstName"
+              value={contactInfo.fields.FirstName.value}
+              onchange={changeHandler}
+            ></lightning-input>
+            <lightning-input 
+              label="Last Name"
+              name="LastName"
+              value={contactInfo.fields.LastName.value}
+              onchange={changeHandler}
+            ></lightning-input>
+            <lightning-input 
+              label="Phone"
+              name="Phone"
+              value={contactInfo.fields.Phone.value}
+              onchange={changeHandler}
+            ></lightning-input>
+            
+
+            <div class="slds-m-around_medium slds-align_absolute-center">
+            
+            <lightning-button 
+              variant="brand"
+              label="Update" 
+              onclick={handleUpdate} 
+            ></lightning-button>
+            </div>
+            </template>
+        </form>
+      </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Fruits">
+        <div class= "slds-var-m-horizontal_medium">
+            <template lwc:if= {fruits}>
+                <template for:each = {fruits} for:item = "frt">
+                    <div key= {frt}> {frt} </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

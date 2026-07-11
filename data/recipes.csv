@@ -1,0 +1,142 @@
+Name,Recipe_ID__c,Instructions__c,Cook_Time_Minutes__c,Servings__c,Tags__c,Ingredients__c,Calories_Per_Serving__c,Recipe_Image__c
+"Classic Margherita Pizza","1","Preheat the oven to 475F (245C).
+Roll out the pizza dough and spread tomato sauce evenly.
+Top with slices of fresh mozzarella and fresh basil leaves.
+Drizzle with olive oil and season with salt and pepper.
+Bake in the preheated oven for 12-15 minutes or until the crust is golden brown.
+Slice and serve hot.","15","4","Pizza
+Italian","Pizza dough
+Tomato sauce
+Fresh mozzarella cheese
+Fresh basil leaves
+Olive oil
+Salt and pepper to taste","300","https://cdn.dummyjson.com/recipe-images/1.webp"
+"Vegetarian Stir-Fry","2","In a wok, heat sesame oil over medium-high heat.
+Add minced ginger and garlic, saute until fragrant.
+Add cubed tofu and stir-fry until golden brown.
+Add broccoli, carrots, and bell peppers. Cook until vegetables are tender-crisp.
+Pour soy sauce over the stir-fry and toss to combine.
+Serve over cooked rice.","20","3","Vegetarian
+Stir-fry
+Asian","Tofu, cubed
+Broccoli florets
+Carrots, sliced
+Bell peppers, sliced
+Soy sauce
+Ginger, minced
+Garlic, minced
+Sesame oil
+Cooked rice for serving","250","https://cdn.dummyjson.com/recipe-images/2.webp"
+"Chocolate Chip Cookies","3","Preheat the oven to 350F (175C).
+In a bowl, cream together softened butter, brown sugar, and white sugar.
+Beat in eggs one at a time, then stir in vanilla extract.
+Combine flour, baking soda, and salt. Gradually add to the wet ingredients.
+Fold in chocolate chips.
+Drop rounded tablespoons of dough onto ungreased baking sheets.
+Bake for 10-12 minutes or until edges are golden brown.
+Allow cookies to cool on the baking sheet for a few minutes before transferring to a wire rack.","10","24","Cookies
+Dessert
+Baking","All-purpose flour
+Butter, softened
+Brown sugar
+White sugar
+Eggs
+Vanilla extract
+Baking soda
+Salt
+Chocolate chips","150","https://cdn.dummyjson.com/recipe-images/3.webp"
+"Chicken Alfredo Pasta","4","Cook fettuccine pasta according to package instructions.
+In a pan, saute sliced chicken in butter until fully cooked.
+Add minced garlic and cook until fragrant.
+Pour in heavy cream and grated Parmesan cheese. Stir until the cheese is melted.
+Season with salt and pepper to taste.
+Combine the Alfredo sauce with cooked pasta.
+Garnish with fresh parsley before serving.","20","4","Pasta
+Chicken","Fettuccine pasta
+Chicken breast, sliced
+Heavy cream
+Parmesan cheese, grated
+Garlic, minced
+Butter
+Salt and pepper to taste
+Fresh parsley for garnish","500","https://cdn.dummyjson.com/recipe-images/4.webp"
+"Mango Salsa Chicken","5","Season chicken thighs with salt and pepper.
+Grill or bake chicken until fully cooked.
+In a bowl, combine diced mango, chopped red onion, cilantro, minced jalapeno, and lime juice.
+Dice the cooked chicken and mix it with the mango salsa.
+Serve over cooked rice.","25","3","Chicken
+Salsa","Chicken thighs
+Mango, diced
+Red onion, finely chopped
+Cilantro, chopped
+Lime juice
+Jalapeno, minced
+Salt and pepper to taste
+Cooked rice for serving","380","https://cdn.dummyjson.com/recipe-images/5.webp"
+"Quinoa Salad with Avocado","6","In a large bowl, combine cooked quinoa, diced avocado, halved cherry tomatoes, diced cucumber, diced red bell pepper, and crumbled feta cheese.
+Drizzle with lemon vinaigrette dressing and toss to combine.
+Season with salt and pepper to taste.
+Chill in the refrigerator before serving.","15","4","Salad
+Quinoa","Quinoa, cooked
+Avocado, diced
+Cherry tomatoes, halved
+Cucumber, diced
+Red bell pepper, diced
+Feta cheese, crumbled
+Lemon vinaigrette dressing
+Salt and pepper to taste","280","https://cdn.dummyjson.com/recipe-images/6.webp"
+"Tomato Basil Bruschetta","7","Preheat the oven to 375F (190C).
+Place baguette slices on a baking sheet and toast in the oven until golden brown.
+In a bowl, combine diced tomatoes, chopped fresh basil, minced garlic, and a drizzle of olive oil.
+Season with salt and pepper to taste.
+Top each toasted baguette slice with the tomato-basil mixture.
+Drizzle with balsamic glaze before serving.","10","6","Bruschetta
+Italian","Baguette, sliced
+Tomatoes, diced
+Fresh basil, chopped
+Garlic cloves, minced
+Balsamic glaze
+Olive oil
+Salt and pepper to taste","120","https://cdn.dummyjson.com/recipe-images/7.webp"
+"Beef and Broccoli Stir-Fry","8","In a bowl, mix soy sauce, oyster sauce, sesame oil, and cornstarch to create the sauce.
+In a wok, stir-fry thinly sliced beef until browned. Remove from the wok.
+Stir-fry broccoli florets, minced garlic, and minced ginger in the same wok.
+Add the cooked beef back to the wok and pour the sauce over the mixture.
+Stir until everything is coated and heated through.
+Serve over cooked white rice.","15","4","Beef
+Stir-fry
+Asian","Beef sirloin, thinly sliced
+Broccoli florets
+Soy sauce
+Oyster sauce
+Sesame oil
+Garlic, minced
+Ginger, minced
+Cornstarch
+Cooked white rice for serving","380","https://cdn.dummyjson.com/recipe-images/8.webp"
+"Caprese Salad","9","Arrange alternating slices of tomatoes and fresh mozzarella on a serving platter.
+Tuck fresh basil leaves between the slices.
+Drizzle with balsamic glaze and extra virgin olive oil.
+Season with salt and pepper to taste.
+Serve immediately as a refreshing salad.","0","2","Salad
+Caprese","Tomatoes, sliced
+Fresh mozzarella cheese, sliced
+Fresh basil leaves
+Balsamic glaze
+Extra virgin olive oil
+Salt and pepper to taste","200","https://cdn.dummyjson.com/recipe-images/9.webp"
+"Shrimp Scampi Pasta","10","Cook linguine pasta according to package instructions.
+In a skillet, saute minced garlic in olive oil until fragrant.
+Add shrimp and cook until pink and opaque.
+Pour in white wine and lemon juice. Simmer until the sauce slightly thickens.
+Season with red pepper flakes, salt, and pepper.
+Toss cooked linguine in the shrimp scampi sauce.
+Garnish with chopped fresh parsley before serving.","20","3","Pasta
+Shrimp","Linguine pasta
+Shrimp, peeled and deveined
+Garlic, minced
+White wine
+Lemon juice
+Red pepper flakes
+Fresh parsley, chopped
+Salt and pepper to taste","400","https://cdn.dummyjson.com/recipe-images/10.webp"

@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="ToDo Form" icon name="action:goal">
+        <div class="slds-var-m-horizontal_medium">
+            <lightning-record-form
+                object-api-name={objectName}
+                record-id={recordId}
+                layout-type="Full"
+                columns="2"
+                onsuccess={successHandler}>
+            </lightning-record-form>
+        </div>
+    </lightning-card> 
+</template>

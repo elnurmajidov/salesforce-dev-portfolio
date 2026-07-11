@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Calculator">
+        <div class="calculator">
+
+            <h1>Calculator</h1>
+
+            <lightning-input
+                type="number"
+                label="First Number"
+                value={firstNumber}
+                onchange={handleFirstNumber}>
+            </lightning-input>
+
+            <lightning-input
+                type="number"
+                label="Second Number"
+                value={secondNumber}
+                onchange={handleSecondNumber}>
+            </lightning-input>
+
+            <div class="result-box">
+                <p>Total</p>
+                <h2>{total}</h2>
+            </div>
+
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Sturdent Search">
+        <lightning-input 
+          type="search"
+          label="Enter a postal code"
+          onchange={searchHandler}
+          value={searchPostal}
+        ></lightning-input>
+        <c-display-results
+            students={studentData}
+            columns={columnData}
+            error={error}>
+        </c-display-results>
+    </lightning-card>
+</template>

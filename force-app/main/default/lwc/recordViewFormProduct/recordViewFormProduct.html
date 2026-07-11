@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Product View Form" icon-name="standard:product">
+        <div class="slds-var-m-horizontal_medium">
+            <lightning-record-view-form
+                object-api-name={objectName}
+                record-id={recordId}>
+                <!-- fields come here -->
+                 <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                        <div class="detail-header">Details</div>
+                        <lightning-output-field field-name={fields.name}></lightning-output-field>
+                        <lightning-output-field field-name={fields.brand}></lightning-output-field>
+                        <lightning-output-field field-name={fields.category}></lightning-output-field>
+                    </div>
+                    <div class="slds-col">
+                        <div class="detail-header">Other Details</div>
+                        <lightning-output-field field-name={fields.desc}></lightning-output-field>
+                        <lightning-output-field field-name={fields.price}></lightning-output-field>
+                        <lightning-output-field field-name={fields.rating}></lightning-output-field>
+                    </div>
+                 </div>
+            </lightning-record-view-form>
+        </div>
+    </lightning-card>
+</template>

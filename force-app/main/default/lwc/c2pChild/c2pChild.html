@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Child Component">
+        <lightning-button-group class="slds-align_absolute-center">
+            <lightning-button 
+              variant="neutral"
+              label="Subtract" 
+              icon-name="utility:dash"
+              onclick={handleSubtract} 
+            ></lightning-button>
+            <lightning-button 
+              variant="neutral"
+              label="Add" 
+              icon-name="utility:add"
+              onclick={handleAdd} 
+            ></lightning-button>
+            <lightning-button 
+              variant="neutral"
+              label="2x" 
+              value="2"
+              icon-name="utility:close"
+              onclick={handleMultiply} 
+            ></lightning-button>
+            <lightning-button 
+              variant="neutral"
+              label="10x" 
+              value="10"
+              icon-name="utility:close"
+              onclick={handleMultiply} 
+            ></lightning-button>
+        </lightning-button-group>
+    </lightning-card>
+</template>

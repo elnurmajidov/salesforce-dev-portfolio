@@ -1,0 +1,2 @@
+soqlParentChildRelationship.childToParent();
+soqlParentChildRelationship.parentToChild();

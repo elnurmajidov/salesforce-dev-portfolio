@@ -1,0 +1,15 @@
+<template>
+    <!-- 1. QUESTION: Add the correct click event handler here -->
+    <div class="slds-box slds-box_link slds-theme_default slds-align_absolute-center slds-var-m-around_small" 
+         style="cursor: pointer;"
+         onclick={handleCardClick}>
+         
+        <div class="slds-text-align_center">
+            <!-- 2. QUESTION: Display the dynamic property names coming from parent -->
+            <h3 class="slds-text-heading_medium"><strong>{planName}</strong></h3>
+            <p class="slds-text-heading_large">{planPrice}</p>
+            
+            <lightning-button label="Select" variant="brand-outline"></lightning-button>
+        </div>
+    </div>
+</template>

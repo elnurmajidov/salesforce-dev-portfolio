@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Conditional Regarding">
+        <div class ="slds-var-m-horizontal_medium">
+            <template lwc:if={showContent}>
+                Statement when showContent is true
+                </template>
+            <template lwc:else>
+                Statement when showContent is false 
+            </template>
+        </div>
+    </lightning-card>
+</template>

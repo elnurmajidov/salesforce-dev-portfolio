@@ -1,0 +1,56 @@
+<template>
+    <lightning-card title="ACCOUNT CONTROLS" icon-name="standard:account" class="account-card">
+
+        <div class="button-box slds-p-horizontal_small">
+            <button type="button" class={showAllButtonClass} onclick={handleShowAccounts}>
+                Show All Accounts
+            </button>
+
+            <button type="button" class={totalButtonClass} onclick={handleTotalRevenue}>
+                Total Revenue
+            </button>
+
+            <button type="button" class={highestButtonClass} onclick={handleHighestRevenue}>
+                Highest Revenue
+            </button>
+        </div>
+
+        <template if:true={isLoading}>
+            <div class="loading-box">
+                <lightning-spinner alternative-text="Loading accounts" size="small"></lightning-spinner>
+            </div>
+        </template>
+
+        <template if:true={errorMessage}>
+            <div class="message-box error-box">{errorMessage}</div>
+        </template>
+
+        <template if:true={showAccounts}>
+            <div class="section slds-p-horizontal_small">
+                <div class="section-title">All Available Accounts</div>
+                <lightning-datatable
+                    key-field="Id"
+                    data={accounts}
+                    columns={columns}
+                    hide-checkbox-column={hideCheckboxColumn}
+                    min-column-width="110">
+                </lightning-datatable>
+            </div>
+        </template>
+
+        <template if:true={showTotal}>
+            <div class="section slds-p-horizontal_small">
+                <div class="section-title">Total Revenue</div>
+                <div class="result-box">{formattedTotalRevenue}</div>
+            </div>
+        </template>
+
+        <template if:true={showHighest}>
+            <div class="section slds-p-horizontal_small">
+                <div class="section-title">Highest Revenue</div>
+                <div class="result-box">{formattedHighestRevenue}</div>
+            </div>
+        </template>
+
+    </lightning-card>
+</template>

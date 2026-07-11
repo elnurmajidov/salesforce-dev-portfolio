@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Stage Picklist" icon-name="standard:opportunity">
+        <div class="slds-var-m-horizontal_medium">
+            <lightning-combobox
+            label="Select Stage"
+            options={stageOptions}
+            onchange={changeHandler}>
+            </lightning-combobox>
+            <div class="slds-var-m-top_small">
+                Selected Stage: {selectedStage}
+            </div>
+        </div>
+    </lightning-card>
+</template>

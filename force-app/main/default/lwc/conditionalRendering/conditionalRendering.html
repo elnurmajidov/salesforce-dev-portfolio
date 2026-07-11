@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Conditional Rendering">
+        <div class="slds-m-around_medium">
+            <lightning-input 
+              type="checkbox"
+              label="Show hidden text"
+              onchange={changeHandler}>
+            </lightning-input>
+
+            <template lwc:if={isShow}>
+            <p>Dosyaniz isleme alinmistir...</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

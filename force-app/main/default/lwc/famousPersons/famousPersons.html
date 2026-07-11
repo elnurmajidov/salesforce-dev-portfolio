@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title = "FAMOUS PERSONS">
+        <div class="container">
+            <template for:each={contacts} for:item="eachcontact">
+                <div key= {eachcontact.name} class="eachcontact-card"> 
+                <h2 class="Miachel"> {eachcontact.name}
+                    
+
+                </h2>
+                <p>
+                    <strong>
+                       title: 
+                    </strong> {eachcontact.title} <br/>
+                     <strong>
+                       company: 
+                    </strong> {eachcontact.company} <br/>
+                    <strong>
+                       stay: 
+                    </strong> {eachcontact.stay} <br/>
+
+
+                </p>
+                </div> 
+
+            </template>
+            
+
+        </div>
+
+    </lightning-card>
+</template>

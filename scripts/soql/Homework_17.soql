@@ -1,0 +1,17 @@
+// Question 1. Get top 3 accounts with highest anual revenue.
+SELECT Name, AnnualRevenue FROM Account ORDER BY AnnualRevenue DESC LIMIT 3
+
+// Question 2. Get the latest created accounts name, rating and phone
+SELECT Name, Rating,Phone FROM Account ORDER BY CreatedDate DESC LIMIT 1
+
+// Question 3. Get the contact's name, email and account name whose titles contain VP
+SELECT Name, Email, Account.Name FROM Contact WHERE Title LIKE '%VP%'
+
+// Question 4. Get all 'Closed-Won' opportunities name, amount and close date
+SELECT Name, Amount, CloseDate FROM Opportunity WHERE StageName = 'Closed-Won'
+
+// Question 5. Get Opportunities whose amount is grater than 100000
+SELECT Name, Amount, CloseDate FROM Opportunity WHERE Amount > 100000
+
+// Question 6. Get Opportunities name, account name, account rating where account type is costumer direct.
+SELECT Name, AccountName, AccountRating FROM Opportunity WHERE Account.Type = 'Costumer - Direct'

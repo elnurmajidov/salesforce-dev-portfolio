@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="OPP INFORMATION">
+        <div class="slds-var-m-around_medium">
+
+            <lightning-input
+                label="Opportunity Name"
+                type="text"
+                value={oppName}
+                onchange={handleChange}>
+            </lightning-input>
+
+            <lightning-combobox
+              label="Type"
+              value={selectedType}
+              placeholder="Select Opportunity Type"
+              options={typeOptions}
+              onchange={handleChange}> 
+            </lightning-combobox>
+
+            <lightning-combobox
+              label="Stage"
+              value={selectedStage}
+              placeholder="Select Opportunity Stage"
+              options={stageOptions}
+              onchange={handleChange}> 
+            </lightning-combobox>
+
+            <div class="slds-var-m-around_medium">
+                <p>Thanks for choosing the correct information. You have entered</p>
+
+                <p>Opportunity Name: {oppName}</p>
+                <p>Type: {selectedType}</p>
+                <p>Stage: {selectedStage}</p>
+                
+                
+            </div>
+
+        </div>
+    </lightning-card>
+</template>

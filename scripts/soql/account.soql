@@ -1,0 +1,28 @@
+// Use .soql files to store SOQL queries.
+// You can execute queries in VS Code by selecting the
+//     query text and running the command:
+//     SFDX: Execute SOQL Query with Currently Selected Text
+
+SELECT Id, Name FROM Account
+
+
+SELECT Id,FirstName,LastName,Languages__c,Phone FROM Contact
+
+//SELECT Fieldlarin API isimleri FROM Object adi
+SELECT Id,Name,Active__c,Phone,Industry,Website,Fax FROM Account
+
+// SELECT Id,FirstName,LastName,Phone,Languages__c FROM Contact
+// SELECT Id,Name,Active__c,Phone,Industry,Website,Fax FROM Account
+// SELECT Id,Name,Active__c,Phone,Industry,Website,Fax FROM Account
+// SELECT Id,Name,Phone FROM Account WHERE Phone = '(512) 757-6000'
+// SELECT Id,Name,Phone,Website FROM Account ORDER BY Name
+// SELECT Id,Name,Phone,Website,AnnualRevenue FROM Account ORDER BY AnnualRevenue DESC NULLS LAST LIMIT 3
+// SELECT Id,Name,Phone,Website,AnnualRevenue FROM Account WHERE Name LIKE 'United%'
+// SELECT Id, Name, StageName, Amount FROM Opportunity WHERE Name LIKE '%Generator%' ORDER BY Amount DESC LIMIT 3
+// SELECT Id, Name, StageName, Amount FROM Opportunity WHERE StageName  = 'Closed Won' ORDER BY Amount DESC LIMIT 3
+// SELECT Id, Name, StageName, Amount FROM Opportunity WHERE StageName != 'Closed Won'
+// SELECT Id,Name,Active__c,Phone,Industry,Website,Fax,annualRevenue FROM Account WHERE AnnualRevenue != null
+// SELECT Id, Name, Project_Name__c, Status__c, Description__c FROM Salesforce_Project__c
+// SELECT Id,Name, Priority__c, Status__c, Subject__c, Salesforce_Project__c FROM Salesforce_Ticket__c WHERE Salesforce_Project__c = 'a00g5000009i8ntAAA' AND Priority__c = 'High'
+
+SELECT Id, Name, Class__c, City__c From Student__c

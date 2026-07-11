@@ -1,0 +1,42 @@
+<template>
+    <lightning-card title="Product Edit Form" icon-name="standard:product">
+        <div class="slds-var-m-horizontal_medium">
+            <lightning-record-edit-form
+                object-api-name={objectName}
+                record-id={recordId}
+                onsuccess={successHandler}>
+                <lightning-messages></lightning-messages>
+                <!--editable fields come here-->
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                        <div class="section-header">Details</div>
+                        <lightning-input-field field-name={fields.name}></lightning-input-field>
+                        <lightning-input-field field-name={fields.brand}></lightning-input-field>
+                        <lightning-input-field field-name={fields.category}></lightning-input-field>
+                    </div>
+                    <div class="slds-col">
+                        <div class="section-header">Other Details</div>
+                        <lightning-input-field field-name={fields.rating}></lightning-input-field>
+                        <lightning-input-field field-name={fields.price}></lightning-input-field>
+                        <lightning-input-field field-name={fields.desc}></lightning-input-field>
+                    </div>
+                </div>
+                <!--Button details come here-->
+                <div class="slds-align_absolute-center slds-var-m-top_medium">
+                    <lightning-button
+                        label="Cancel"
+                        variant="neutral"
+                        type="reset"
+                        class="slds-var-m-right_x-small">
+                    </lightning-button>
+                    <lightning-button
+                        label="Save"
+                        variant="brand"
+                        type="submit">
+                    </lightning-button>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+    
+</template>

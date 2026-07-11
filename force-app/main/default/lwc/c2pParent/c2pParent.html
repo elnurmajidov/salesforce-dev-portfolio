@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Child to Parent Communication">
+        <div class="slds-m-around_medium">
+            <p class="slds-align_absolute-center">
+                COUNTER : {counter}
+            </p>
+        </div>
+        <c-c2p-child
+        onsubtraction={handleSubtraction}
+        onaddition={handleAddition}
+        onmultiply={handleMultiplication}>
+        
+        </c-c2p-child>
+    </lightning-card>
+</template>

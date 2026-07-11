@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Combo Box Homework">
+        <div class="slds-m-around_medium">
+
+            <lightning-combobox
+                label="Select Option"
+                value={selectedValue}
+                options={options}
+                onchange={handleChange}>
+            </lightning-combobox>
+
+            <template lwc:if={showMessage}>
+                <p class="slds-text-heading_large slds-m-top_medium">
+                    Lwc is my favourite subject in salesforce...
+                </p>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

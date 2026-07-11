@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Accounts">
+        <div class="slds-var-m-horizontal_medium">
+            <template lwc:if={accounts}>
+                <template for:each={accounts} for:item="acc">
+                    <div key={acc.Id} class="slds-box slds-box_x-small slds-var-m-bottom_small">
+                        <div>
+                            Name: {acc.Name} <br/>
+                            Type: {acc.Type} <br/>
+                            Industry: {acc.Industry} <br/>
+                            AnnualRevenue: {acc.AnnualRevenue} <br/>
+                        </div>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

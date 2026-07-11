@@ -1,0 +1,46 @@
+<template>
+    <lightning-card title="Europe Contact Picklists" icon-name="standard:contact">
+        <div class="slds-var-m-horizontal_medium">
+            <template if:true={hasPicklistValues}>
+                <section class="record-type-panel europe">
+                    <p class="record-type-name">Europe</p>
+                    <p class="record-type-label">Contact Record Type Id</p>
+                    <p class="record-type-id">{europeRecordTypeId}</p>
+                </section>
+
+                <div class="picklist-grid">
+                    <lightning-combobox
+                        name="level"
+                        label="Level"
+                        value={selectedLevel}
+                        placeholder="Select Level"
+                        options={levelOptions}
+                        onchange={changeHandler}>
+                    </lightning-combobox>
+
+                    <lightning-combobox
+                        name="leadSource"
+                        label="Lead Source"
+                        value={selectedLeadSource}
+                        placeholder="Select Lead Source"
+                        options={leadSourceOptions}
+                        onchange={changeHandler}>
+                    </lightning-combobox>
+                </div>
+
+                <div class="selection-summary">
+                    <p>Selected Level: {selectedLevel}</p>
+                    <p>Selected Lead Source: {selectedLeadSource}</p>
+                </div>
+            </template>
+
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading record types" size="small"></lightning-spinner>
+            </template>
+
+            <template if:true={error}>
+                <div class="error-box">{error}</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

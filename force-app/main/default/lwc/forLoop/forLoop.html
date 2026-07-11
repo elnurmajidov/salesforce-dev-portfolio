@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Template Looping Direktifi">
+        <div class="slds-m-around_large">
+
+            <!-- <template for:each={kitaplar} for:item="eachBook">
+                <p key={eachBook.siraNo}>
+                    {eachBook.siraNo} {eachBook.kitapAdi}
+                </p>
+            </template> -->
+
+            <ul class="slds-has-dividers_around-space">
+                <template for:each={kitaplar} for:item="eachBook">
+                <li key={eachBook.siraNo} class="slds-item">{eachBook.siraNo} {eachBook.kitapAdi}</li>
+                </template>
+            </ul>
+        </div>
+    </lightning-card>
+</template>

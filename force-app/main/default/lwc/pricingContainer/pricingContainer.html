@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="Membership Plans (Parent)">
+        <div class="slds-var-m-around_medium">
+            
+            <div class="slds-box slds-theme_shade slds-text-align_center">
+                <!-- 6. QUESTION: Display the chosen plan dynamically -->
+                <p>Your Current Selection: <strong>{chosenPlan}</strong></p>
+                <p>Your Plan Price: <strong>{choosenPrice}</strong></p>
+            </div>
+
+            <div style="display: flex;">
+                <!-- 7. QUESTION: Call the child component  here. 
+                     Pass 'Bronze Plan' as plan-name, '$99' as plan-price, 
+                     and listen to the 'planselect' event correctly! -->
+                     
+                <c-pricing-card
+                    plan-name="Bronze Plan" 
+                    plan-price="$99" 
+                    onplanselect={handlePlanSelection}>
+                </c-pricing-card>
+                <c-pricing-card
+                    plan-name="Silver Plan" 
+                    plan-price="$199" 
+                    onplanselect={handlePlanSelection}>
+                </c-pricing-card>
+                <c-pricing-card
+                    plan-name="Gold Plan" 
+                    plan-price="$299" 
+                    onplanselect={handlePlanSelection}>
+                </c-pricing-card>
+            </div>
+
+        </div>
+    </lightning-card>
+</template>

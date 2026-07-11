@@ -1,0 +1,45 @@
+<template>
+    <lightning-card icon-name="standard:contact" variant="base" title="Create Contact with CreateRecord">
+      <div class="slds-var-m-around_medium">
+        <form lwc:ref="contactForm" >
+            <lightning-input 
+              label="First Name"
+              name="FirstName"
+              onchange={changeHandler}
+            ></lightning-input>
+            <lightning-input 
+              label="Last Name"
+              name="LastName"
+              onchange={changeHandler}
+            ></lightning-input>
+            <lightning-input 
+              label="Phone"
+              name="Phone"
+              onchange={changeHandler}
+            ></lightning-input>
+            <lightning-combobox
+              name="LeadSource"
+              label="Lead Source"
+              placeholder="Select a Lead Source"
+              options={leadSourceOptions}
+              onchange={changeHandler}  
+              lwc:ref="combobx" 
+            ></lightning-combobox>
+
+            <div class="slds-m-around_medium slds-align_absolute-center">
+            <lightning-button 
+              variant="neutral"
+              label="Cancel" 
+              onclick={handleCancel} 
+            ></lightning-button>
+            <lightning-button 
+              variant="brand"
+              label="Save" 
+              onclick={handleSave} 
+            ></lightning-button>
+            </div>
+
+        </form>
+      </div>
+    </lightning-card>
+</template>

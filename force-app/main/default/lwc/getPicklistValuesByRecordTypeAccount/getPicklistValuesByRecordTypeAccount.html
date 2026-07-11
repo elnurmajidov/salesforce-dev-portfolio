@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Account Picklists" icon-name="standard:account">
+        <div class="slds-var-m-horizontal_medium">
+            <lightning-combobox
+                label="Type"
+                options={typeOptions}
+                onchange={changeHandler}>
+            </lightning-combobox>
+            <lightning-combobox
+                label="Industry"
+                options={industryOptions}
+                onchange={changeHandler}>
+            </lightning-combobox>
+
+            <div class="slds-var-m-top_small">
+                    Selected Type: {selectedType} <br/>
+                    Selected Industry: {selectedIndustry}
+            </div>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,6 @@
+.other-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 6px;
+}

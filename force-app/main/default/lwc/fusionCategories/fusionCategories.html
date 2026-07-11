@@ -1,0 +1,21 @@
+<template>
+    <lightning-card>
+        <template lwc:if={categories}>
+            <lightning-layout multiple-rows>
+                <template for:each={categories} for:item="category">
+                    <lightning-layout-item size="6" key={category.idCategory} padding="around-small">
+                        <div class="category-item" onclick={handleCategorySelect} data-id={category.strCategory}>
+                            <img src={category.strCategoryThumb} />
+                            <div class="slds-align_absolute-center">
+                                <strong>{category.strCategory}</strong>
+                            </div>
+                        </div>
+                    </lightning-layout-item>
+                </template>
+            </lightning-layout>
+        </template>
+        <template lwc:else>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </template>
+    </lightning-card>
+</template>

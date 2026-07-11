@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Conditional Rendering">
+        <div class="slds-var-m-horizontal_medium">
+            <lightning-button
+            label="Show Content"
+            variant="brand"
+            onclick={clickHandler}>
+        </lightning-button>
+        <div class="slds-var-m-top_small">
+            <template lwc:if={showContent}>
+                lightning-button provides many variants that add color to a button, which convey different meaning on a button. Use the variants together with clear text on the button to match the meaning you are trying to convey via color. For example, if you use the destructive button to point out a potential warning, make sure the text communicates the same message.
+            </template>
+        </div>
+        </div>
+    </lightning-card>
+</template>

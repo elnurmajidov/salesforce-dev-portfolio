@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="Calculator">
+        <div class="slds-var-m-horizontal_medium">
+            <!-- lightning inputs -->
+             <div>
+                <lightning-input
+                    type="number"
+                    label="Enter number 1"
+                    onchange={changeHandler1}>
+                </lightning-input>
+                <lightning-input
+                    type="number"
+                    label="Enter number 2"
+                    onchange={changeHandler2}>
+                </lightning-input>
+             </div>
+             <!-- Button & Result -->
+             <div class="slds-var-m-top_small slds-align_absolute-center">
+                <template lwc:if={showButton}>
+                    <lightning-button
+                        variant="brand"
+                        label="SUM"
+                        onclick={sumHandler}>
+                    </lightning-button>
+                </template>
+             </div>
+             <div class="slds-var-m-top_small slds-align_absolute-center">
+                <template lwc:if={result}>
+                    Result: {result}
+                </template>
+             </div>
+        </div>
+
+    </lightning-card>
+</template>

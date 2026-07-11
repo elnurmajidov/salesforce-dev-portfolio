@@ -1,0 +1,33 @@
+<template>
+    <lightning-card>
+        <template lwc:if={foodItems}>
+            <lightning-layout multiple-rows>
+                <template for:each={foodItems} for:item="item">
+                    <lightning-layout-item size="3" padding="around-small" key={item.idMeal}>
+                        <div class="food-item">
+                            <img src={item.strMealThumb} />
+                            <div class="slds-align_absolute-center">
+                                <strong>{item.strMeal}</strong>
+                            </div>
+                            <div class="other-info">
+                                <span>
+                                    <lightning-badge label={item.strArea}></lightning-badge>
+                                </span>
+                                <span>
+                                    <lightning-badge 
+                                        label={item.strCountry} 
+                                        class="slds-badge_inverse"
+                                        icon-name="utility:checkin">
+                                    </lightning-badge>
+                                </span>
+                            </div>
+                        </div>
+                    </lightning-layout-item>
+                </template>
+            </lightning-layout>
+        </template>
+        <template lwc:else>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </template>
+    </lightning-card>
+</template>
