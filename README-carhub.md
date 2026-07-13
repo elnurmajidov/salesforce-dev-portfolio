@@ -52,5 +52,6 @@ component-to-component communication (LMS + custom events).
 ## Sample Data
 
 Twelve car records (Tata, Hyundai, Honda, Ford, Renault) are loaded with an
-anonymous Apex script. Images in the static resource are generated placeholders;
-swap the zip with the real `carhub_images.zip` to use actual photos.
+anonymous Apex script. Car photos in the static resource are sourced from
+Wikimedia Commons (freely licensed) and resized to fit the 5 MB static
+resource limit.
