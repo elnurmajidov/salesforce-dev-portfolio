@@ -25,6 +25,7 @@ Hands-on Salesforce development work built during an intensive Salesforce Develo
 ## ✨ Highlights
 
 - **⭐ Insurance Policy & Claims Management app** — end-to-end mini application (custom objects, record-triggered Flows, validation rules, bulkified Apex + tests, LWC dashboard). See [README-insurance-app.md](README-insurance-app.md)
+- **⭐ CAR HUB — Car Explorer app** — Lightning app with four LWCs communicating over Lightning Message Service and custom events (filter → tile list → card), Apex controller, static resource images, custom app page. See [README-carhub.md](README-carhub.md)
 - **Trigger framework practice** — `CustomerTriggerHandler`, `OpportunityTrigger`, `AccountTrigger` with separation of trigger logic and handler classes
 - **Asynchronous Apex** — `CreateTaskClosed5DaysBatch`, `DeleteClosedLostOpportunitiesBatch` + `Schedulable` implementations, `AsyncParksServices` (Queueable/Future callouts)
 - **API integrations** — `BookingRestCallouts`, `MovieRestCallOuts`, `CommentCallouts`, `ParksServices` (SOAP/WSDL)

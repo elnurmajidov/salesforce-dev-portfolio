@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Cars Available" icon-name="custom:custom28">
+        <div class="slds-var-p-around_small">
+            <template if:true={cars}>
+                <div class="slds-grid slds-wrap">
+                    <template for:each={cars} for:item="car">
+                        <div key={car.Id} class="slds-col slds-size_1-of-3">
+                            <c-car-tile car={car} oncarselect={handleCarSelect}></c-car-tile>
+                        </div>
+                    </template>
+                </div>
+            </template>
+            <template if:true={error}>
+                <p class="slds-text-color_error">Error loading cars.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

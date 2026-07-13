@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>CarsFiltered</masterLabel>
+    <isExposed>true</isExposed>
+    <description>Message channel to send the selected car category from Car Filter to Car Tile List</description>
+    <lightningMessageFields>
+        <fieldName>category</fieldName>
+        <description>Selected car category</description>
+    </lightningMessageFields>
+</LightningMessageChannel>

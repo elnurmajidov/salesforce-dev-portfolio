@@ -1,0 +1,14 @@
+<template>
+    <div class="tile slds-var-m-around_small" onclick={handleClick}>
+        <img src={car.Picture_URL__c} alt={car.Name} class="car-img" />
+        <div class="slds-text-align_center">
+            <p class="slds-text-heading_small slds-text-title_bold">{car.Name}</p>
+            <p>Price:<lightning-formatted-number
+                value={car.Price__c}
+                format-style="currency"
+                currency-code="USD"
+                maximum-fraction-digits="0"
+            ></lightning-formatted-number></p>
+        </div>
+    </div>
+</template>
