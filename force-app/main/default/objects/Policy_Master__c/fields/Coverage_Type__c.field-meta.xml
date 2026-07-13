@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coverage_Type__c</fullName>
+    <label>Coverage Type</label>
+    <type>Lookup</type>
+    <referenceTo>Coverage_Type__c</referenceTo>
+    <relationshipLabel>Policies</relationshipLabel>
+    <relationshipName>Policies</relationshipName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <description>The coverage product this policy is based on. Restrict delete so a coverage type in use cannot be removed.</description>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claim_Amount_Positive</fullName>
+    <active>true</active>
+    <description>A claim must always be filed for a positive amount.</description>
+    <errorConditionFormula>Claim_Amount__c &lt;= 0</errorConditionFormula>
+    <errorDisplayField>Claim_Amount__c</errorDisplayField>
+    <errorMessage>Claim Amount must be greater than zero.</errorMessage>
+</ValidationRule>

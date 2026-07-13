@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Claims_Amount__c</fullName>
+    <label>Total Claims Amount</label>
+    <type>Summary</type>
+    <summarizedField>Insurance_Claim__c.Claim_Amount__c</summarizedField>
+    <summaryForeignKey>Insurance_Claim__c.Policy__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <description>Roll-up summary: total amount claimed against this policy across all claims.</description>
+</CustomField>

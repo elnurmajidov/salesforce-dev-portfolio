@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Claim_Date_Within_Policy_Period</fullName>
+    <active>true</active>
+    <description>An incident is only covered if it happened while the policy was in force: the Claim Date must fall between the policy Start Date and End Date.</description>
+    <errorConditionFormula>OR(
+    Claim_Date__c &lt; Policy__r.Start_Date__c,
+    Claim_Date__c &gt; Policy__r.End_Date__c
+)</errorConditionFormula>
+    <errorDisplayField>Claim_Date__c</errorDisplayField>
+    <errorMessage>Claim Date must fall within the policy coverage period (between the policy Start Date and End Date).</errorMessage>
+</ValidationRule>
